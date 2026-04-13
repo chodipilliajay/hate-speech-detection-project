@@ -1,0 +1,13 @@
+#together-ai
+gradio
+faiss-cpu
+numpy
+pandas
+tensorflow 
+sentence-transformers
+python-dotenv
+together
+tf-keras
+# faiss
+flask
+requests 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>📊 CSV RAG Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; background-color: #f8f8f8; }
+        .container { max-width: 700px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+        textarea, input[type="submit"] { width: 100%; font-size: 16px; padding: 10px; margin-top: 10px; }
+        .answer { background: #f0f0f0; padding: 15px; margin-top: 20px; border-radius: 8px; }
+        h2 { text-align: center; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>📊 CSV RAG Chatbot</h2>
+    <form method="post">
+        <label for="question">Ask a question:</label>
+        <textarea id="question" name="question" rows="3" placeholder="e.g. What is the tweet sentiment?" required></textarea>
+        <input type="submit" value="Get Answer">
+    </form>
+
+    {% if answer %}
+        <div class="answer">
+            <h3>Answer:</h3>
+            <p>{{ answer }}</p>
+        </div>
+    {% endif %}
+</div>
+</body>
+</html>
